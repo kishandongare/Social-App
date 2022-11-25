@@ -1,2 +1,2 @@
 # Social App
-https://github.com/Towfiqomi/django-social-media-webapplication
+https://kishan-dongare-social.herokuapp.com/
