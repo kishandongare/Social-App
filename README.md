@@ -2,7 +2,7 @@
 
 https://kishan-dongare-social.herokuapp.com/
 
-# Download on local machine
+# Download code on local machine
 
 > $ heroku git:clone -a kishan-dongare-social
 
