@@ -7,3 +7,10 @@ https://kishan-dongare-social.herokuapp.com/
 > $ heroku git:clone -a kishan-dongare-social
 
 > $ cd kishan-dongare-social
+
+# Specifications
+
+1. Django
+2. Any DB (Default SQlite)
+3. HTML, CSS , Bootstrap
+4. Javascript (JQuery Plugin)
