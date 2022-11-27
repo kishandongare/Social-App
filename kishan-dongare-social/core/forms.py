@@ -12,7 +12,7 @@ class UserForm(forms.ModelForm):
 		fields = ['username','email','password']
 
 
-# Form for updating user email
+# Form for updating user email(Not Implemented)
 class UpdateUserForm(forms.ModelForm):
 	email = forms.EmailField(max_length=254, help_text='Required field')
 
@@ -21,7 +21,7 @@ class UpdateUserForm(forms.ModelForm):
 		fields = ['email']
 
 
-# Form for updating profile
+# Form for updating profile(Not Implemented)
 class UpdateProfileForm(forms.ModelForm):
 
 	class Meta:
