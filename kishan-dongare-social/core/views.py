@@ -1,8 +1,8 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect #render: is used to render data in HTML templete using {{data}} #redirect: one url to unother url
 from django.views import generic
 from django.views.generic import View
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
-from .forms import UserForm,UpdateUserForm,UpdateProfileForm,CreatePost,CreateComment
+from .forms import UserForm,CreatePost,CreateComment
 from django.http import HttpResponse 
 from django.contrib.auth import authenticate,login
 from django.contrib import messages
