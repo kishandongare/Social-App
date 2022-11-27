@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect #render: is used to render data in HTML templete using {{data}} #redirect: one url to unother url
-from django.views import generic
+from django.views import generic # it comes to presenting views of your database content
 from django.views.generic import View
 from django.views.generic.edit import CreateView,UpdateView,DeleteView
 from .forms import UserForm,CreatePost,CreateComment
@@ -9,7 +9,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from .models import User,Following,Follower,Post,Profile
-from django.urls import reverse
+from django.urls import reverse # allows to retrieve url details from url's.py file through the name value provided there
 from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.contrib.auth.hashers import make_password
