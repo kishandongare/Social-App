@@ -161,7 +161,7 @@ def search(request):
     count = {}
     results = {}
     results['posts']= User.objects.none()
-    queries = data.split()
+    queries = data.split() #The split() method splits a string into a list.
     for query in queries:
         results['posts'] = results['posts'] | User.objects.filter(username__icontains=query)
         count['posts'] = results['posts'].count()
@@ -187,7 +187,7 @@ def search(request):
         count3['posts'] = results3['posts'].count()
         
 
-    files = itertools.chain(results['posts'],results2['posts'], results3['posts'])
+    files = itertools.chain(results['posts'],results2['posts'], results3['posts']) #combine all (takes a series of iterables and returns one iterable)
     result = []
     for i in files:
         if i not in result:
