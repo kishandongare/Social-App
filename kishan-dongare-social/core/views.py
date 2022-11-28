@@ -78,12 +78,12 @@ def dashboard(request):
 
 def feed(request):
 	try:
-		post_all = Post.objects.all().order_by('created_at')
+		post_all = Post.objects.all().order_by('created_at') #from model
 		print(post_all)
 	except Exception as e:
 		print(e)
 
-	comment_form = CreateComment()
+	comment_form = CreateComment() #from form
 	username = request.user.username
 
 	context = {
@@ -122,7 +122,7 @@ def unfollowweb(request, username):
 
 def postweb(request, username):
 	if request.method == 'POST':
-		post_form = CreatePost(request.POST, request.FILES)
+		post_form = CreatePost(request.POST, request.FILES) #from form
 		if post_form.is_valid():
 			post_text = post_form.cleaned_data['post_text']
 			post_picture = post_form.cleaned_data['post_picture']
