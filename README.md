@@ -13,4 +13,3 @@ https://kishan-dongare-social.herokuapp.com/
 1. Django
 2. DB (Default SQlite)
 3. HTML, CSS , Bootstrap
-4. Javascript (JQuery Plugin)
